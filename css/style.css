@@ -1,0 +1,120 @@
+/*
+************************************************
+******************FONTS*************************
+**************************************************
+*/
+
+@font-face {
+
+    font-family: 'grotesk';
+
+    src:url(fonts/grotesk.otf);
+
+}
+
+
+
+/*
+************************************************
+******************WELCOME*************************
+**************************************************
+*/
+
+#welcome .navbar{
+    background-color: rgba(178,178,178,.8);
+}
+
+video#bgvid {
+    position: fixed;
+
+    top: 50%;
+
+    left: 50%;
+
+    min-width: 100%;
+
+    min-height: 100%;
+
+    width: auto;
+
+    height: auto;
+
+    z-index: -100;
+
+    -ms-transform: translateX(-50%) translateY(-50%);
+
+    -moz-transform: translateX(-50%) translateY(-50%);
+
+    -webkit-transform: translateX(-50%) translateY(-50%);
+
+    transform: translateX(-50%) translateY(-50%);
+
+    background: url(../img/welcome/vrBg.png) no-repeat;
+
+    background-size: cover;
+}
+
+#welcome .btn{
+    background-color: transparent;
+}
+
+#welcome ul{
+    list-style-type: none;
+
+    position:absolute;
+
+    left:91%;
+}
+
+
+#welcome li{
+
+    font-family: 'grotesk', sans-serif;
+
+    color:black;
+
+    font-size: 20px;
+
+    text-align: center;
+
+    margin-top:10%;
+
+    padding-right:10% ;
+
+
+}
+
+#welcome li:hover {
+
+    background-color: rgba(178,178,178,.8);
+
+
+}
+
+
+/*
+************************************************
+******************MEDIA QUERRIES*************************
+**************************************************
+*/
+@media (min-device-width: 1200px) {
+    #welcome ul{
+
+        left:85%;
+
+    }
+
+}
+
+
+@media screen and (max-device-width: 800px) {
+    html {
+        background: url(../img/welcome/vrBg.png) #000 no-repeat center center fixed;
+    }
+    #bgvid {
+        display: none;
+    }
+}
+
+
+
