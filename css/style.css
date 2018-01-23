@@ -22,9 +22,11 @@
 
 #welcome .navbar{
     background-color: rgba(178,178,178,.8);
+
+    width:100%;
 }
 
-video#bgvid {
+#welcome video#bgvid {
     position: fixed;
 
     top: 50%;
@@ -91,13 +93,33 @@ video#bgvid {
 
 }
 
+#welcome .showInfo{
+
+    position:absolute;
+
+    top:97%;
+
+    background-color: rgba(178,178,178,.9);
+
+    width: 100%;
+
+    text-align: center;
+
+
+
+}
+
+#welcome  .fa{
+    color:white;
+}
+
 
 /*
 ************************************************
 ******************MEDIA QUERRIES*************************
 **************************************************
 */
-@media (min-device-width: 1200px) {
+@media (max-width: 1200px) {
     #welcome ul{
 
         left:85%;
