@@ -1,3 +1,4 @@
+
 /*
 ************************************************
 ******************FONTS*************************
@@ -21,9 +22,9 @@
 */
 
 #welcome .navbar{
-    background-color: rgba(178,178,178,.8);
+    background-color: rgba(0,0,0,.4);
 
-    width:100%;
+
 }
 
 #welcome video#bgvid {
@@ -88,7 +89,7 @@
 
 #welcome li:hover {
 
-    background-color: rgba(178,178,178,.8);
+    background-color: rgba(0,0,0,.4);
 
 
 }
@@ -97,9 +98,9 @@
 
     position:absolute;
 
-    top:97%;
+    bottom:0;
 
-    background-color: rgba(178,178,178,.9);
+    background-color: rgba(0,0,0,.4);
 
     width: 100%;
 
@@ -109,10 +110,78 @@
 
 }
 
+
+
 #welcome  .fa{
     color:white;
 }
 
+#welcome .descriptions{
+
+
+
+    position:absolute;
+
+    bottom:4.7%;
+}
+
+#welcome .descriptionsRow{
+    background-color: rgba(0,51,51,.7);
+}
+
+#welcome h2{
+    font-family: 'grotesk', sans-serif;
+
+    color: white;
+
+    font-size: 20px;
+
+    margin: 10% 0 5% 0;
+
+}
+
+#welcome .definition{
+
+    font-family: "Myriad Pro", sans-serif;
+
+    color: white;
+
+}
+
+#welcome .borders{
+    border-left: white solid 3px;
+
+    border-right:white solid 3px;
+
+    padding-left: 5%;
+
+    padding-right:5%;
+}
+
+/*#welcome .middle{
+    border-left: solid white 2px;
+    border-right: solid white 2px;
+}*/
+
+#welcome .hideInfo {
+
+    background-color: rgba(0, 0, 0, .4) ;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+#welcome .img-fluid {
+
+    width: 30%;
+
+    height:100%;
+
+    margin-left: 25%;
+
+
+}
 
 /*
 ************************************************
