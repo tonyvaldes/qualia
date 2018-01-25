@@ -13,6 +13,14 @@
 
 }
 
+@font-face {
+
+    font-family: 'neoteric-bold';
+
+    src:url(fonts/neoteric-bold.ttf);
+
+}
+
 
 
 /*
@@ -20,8 +28,14 @@
 ******************WELCOME*************************
 **************************************************
 */
+#welcome{
+
+
+}
 
 #welcome .navbar{
+
+
     background-color: rgba(0,0,0,.4);
 
 
@@ -36,11 +50,11 @@
 
     min-width: 100%;
 
-    min-height: 100%;
+
 
     width: auto;
 
-    height: auto;
+    height:auto;
 
     z-index: -100;
 
@@ -62,6 +76,7 @@
 }
 
 #welcome ul{
+
     list-style-type: none;
 
     position:absolute;
@@ -99,13 +114,11 @@
     position:absolute;
 
     bottom:0;
-
     background-color: rgba(0,0,0,.4);
 
     width: 100%;
 
     text-align: center;
-
 
 
 }
@@ -117,8 +130,6 @@
 }
 
 #welcome .descriptions{
-
-
 
     position:absolute;
 
@@ -158,10 +169,7 @@
     padding-right:5%;
 }
 
-/*#welcome .middle{
-    border-left: solid white 2px;
-    border-right: solid white 2px;
-}*/
+
 
 #welcome .hideInfo {
 
@@ -181,6 +189,108 @@
     margin-left: 25%;
 
 
+}
+
+
+
+/*
+************************************************
+******************SECTORS*************************
+**************************************************
+*/
+#sectors {
+    background: url('../img/sectors/sectorsBg.png') no-repeat center center;
+
+    background-size: cover;
+
+    height: calc(100vh);
+
+    margin-top: 100px;
+
+    width: 100%;
+}
+
+#sectors .col-sm-4{
+    margin-top: 15%;
+}
+
+#sectors .titleNeo{
+    font-family: 'neoteric-bold', sans-serif;
+
+    font-weight: bold;
+
+    font-size: 50px;
+
+    color:black;
+
+    text-align: right;
+
+
+}
+
+#sectors .titleGrotesk{
+     font-family: 'grotesk', sans-serif;
+
+     font-size:  50px;
+
+     color:black;
+
+     text-align: right;
+
+ }
+
+#sectors .titleGroteskBottom{
+    font-family: 'grotesk', sans-serif;
+
+    font-size:  30px;
+
+    color:black;
+
+    text-align: right;
+}
+
+#sectors .sectorsTitle:after{
+    content:'';
+
+    width:120px;
+
+    height:4px;
+
+    background:#006666;
+
+    position:absolute;
+
+    bottom:-4px;
+
+    right:0;
+
+}
+
+#sectorsExamples {
+    background-color: white;
+
+}
+
+#sectorsExamples .img-fluid{
+    width:100%;
+}
+
+#sectorsExamples .col-sm-6{
+    height:50%;
+}
+
+/*
+************************************************
+******************PROYECTS*************************
+**************************************************
+*/
+
+#proyects {
+    background-color: white;
+}
+
+#proyects .img-fluid{
+    width:90%;
 }
 
 /*
