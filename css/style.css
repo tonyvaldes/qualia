@@ -1,3 +1,22 @@
+/*******************************************************
+
+                   GENERAL STYLES
+
+********************************************************/
+
+.vertical-align {
+
+    position: relative;
+
+    top: 50%;
+
+    -webkit-transform: translateY(-50%);
+
+    -moz-transform: translateY(-50%);
+
+    transform: translateY(-50%);
+
+}
 
 /*
 ************************************************
@@ -21,25 +40,101 @@
 
 }
 
+/* GENERAL STYLES */
+html {
+    overflow-x: hidden;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+/*
+************************************************
+******************NAVIGATION*************************
+**************************************************
+*/
+
+nav{
 
 
+    background-color: rgba(0,0,0,.4);
+
+
+
+}
+.navbar{
+    position:fixed;
+
+    width:100%;
+
+    z-index: 100;
+}
+
+#navbar .btn{
+    background-color: transparent;
+}
+
+nav .fa{
+    color: white;
+}
+
+#menu   {
+    position:absolute;
+
+    position:fixed;
+    left:91%;
+
+    top:6%;
+
+    z-index: 10;
+}
+
+#menu ul{
+
+    list-style-type: none;
+
+
+
+}
+
+
+#menu li{
+
+    font-family: 'grotesk', sans-serif;
+
+    color:black;
+
+    font-size: 20px;
+
+    text-align: center;
+
+    margin-top:10%;
+
+    padding-right:10% ;
+
+    cursor: pointer;
+
+
+
+}
+
+#menu li:hover {
+
+    background-color: rgba(0,0,0,.4);
+
+
+}
 /*
 ************************************************
 ******************WELCOME*************************
 **************************************************
 */
 #welcome{
-
-
+    min-height: 100vh;
 }
 
-#welcome .navbar{
 
-
-    background-color: rgba(0,0,0,.4);
-
-
-}
 
 #welcome video#bgvid {
     position: fixed;
@@ -56,7 +151,7 @@
 
     height:auto;
 
-    z-index: -100;
+    z-index: -1000;
 
     -ms-transform: translateX(-50%) translateY(-50%);
 
@@ -71,49 +166,14 @@
     background-size: cover;
 }
 
-#welcome .btn{
-    background-color: transparent;
-}
 
-#welcome ul{
-
-    list-style-type: none;
-
-    position:absolute;
-
-    left:91%;
-}
-
-
-#welcome li{
-
-    font-family: 'grotesk', sans-serif;
-
-    color:black;
-
-    font-size: 20px;
-
-    text-align: center;
-
-    margin-top:10%;
-
-    padding-right:10% ;
-
-
-}
-
-#welcome li:hover {
-
-    background-color: rgba(0,0,0,.4);
-
-
-}
 
 #welcome .showInfo{
 
     position:absolute;
 
     bottom:0;
+
     background-color: rgba(0,0,0,.4);
 
     width: 100%;
@@ -133,7 +193,7 @@
 
     position:absolute;
 
-    bottom:4.7%;
+    bottom:47px;
 }
 
 #welcome .descriptionsRow{
@@ -205,7 +265,7 @@
 
     height: calc(100vh);
 
-    margin-top: 100px;
+
 
     width: 100%;
 }
@@ -277,6 +337,14 @@
 
 #sectorsExamples .col-sm-6{
     height:50%;
+}
+
+#sectorsExamples>.row:nth-of-type(1)>.col-sm-6:nth-of-type(2),
+#sectorsExamples>.row:nth-of-type(2)>.col-sm-6:nth-of-type(1),
+#sectorsExamples>.row:nth-of-type(3)>.col-sm-6:nth-of-type(2),
+#sectorsExamples>.row:nth-of-type(4)>.col-sm-6:nth-of-type(1),
+#sectorsExamples>.row:nth-of-type(5)>.col-sm-6:nth-of-type(2){
+    padding: 0;
 }
 
 /*

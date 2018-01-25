@@ -11,7 +11,7 @@
 
     <!--Bootstrap-->
 
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -27,65 +27,63 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
+<nav class="navbar navbar-light bg-faded">
+
+    <a class="navbar-brand" href="#">
+        <img src="img/welcome/qualiaLogo.png" width="100" height="23" class="d-inline-block align-top" alt="">
+    </a>
+    <button class="btn bg-transparent" data-toggle="collapse" data-target="#menu"><i class="fa fa-bars fa-2x"
+                                                                      aria-hidden="true">
+
+    </i></button>
+
+</nav>
+<div id="menu" class="collapse">
+    <ul>
+        <li>
+            INCIO
+        </li>
+        <li>
+            SECTORES
+        </li>
+        <li>
+            EQUIPO
+        </li>
+        <li>
+            BLOG
+        </li>
+        <li>
+            CONTACTO
+        </li>
+    </ul>
+</div>
+
+
 
 
 <div id="welcome">
 
-    <div class="container-fluid">
         <video playsinline autoplay muted loop poster="img/welcome/vrBg.png" id="bgvid">
             <source src="video/vrDemo.mp4" type="video/webm">
             <source src="video/vrDemo.mp4" type="video/mp4">
         </video>
-    </div>
-    <nav class="navbar navbar-light bg-faded">
-
-        <a class="navbar-brand" href="#">
-            <img src="img/welcome/qualiaLogo.png" width="100" height="23" class="d-inline-block align-top" alt="">
-        </a>
-        <button class="btn" data-toggle="collapse" data-target="#menu"><i class="fa fa-bars fa-2x"
-                                                                          aria-hidden="true">
-
-        </i></button>
-
-    </nav>
-
-
-    <div id="menu" class="collapse">
-        <ul>
-            <li>
-                INCIO
-            </li>
-            <li>
-                SECTORES
-            </li>
-            <li>
-                EQUIPO
-            </li>
-            <li>
-                BLOG
-            </li>
-            <li>
-                CONTACTO
-            </li>
-        </ul>
-    </div>
 
     <div class="showInfo">
-        <button class="btn" data-toggle="collapse" data-target="#descriptions"><i class="fa fa-chevron-up fa-2x"
+        <button class="btn bg-transparent" data-toggle="collapse" data-target="#descriptions"><i class="fa fa-chevron-up fa-2x"
                                                                                   aria-hidden="true">
         </i></button>
     </div>
 
     <div id="descriptions" class="descriptions collapse">
         <div class="hideInfo">
-            <button class="btn" data-toggle="collapse" data-target="#descriptions"><i class="fa fa-chevron-down fa-2x"
+            <button class="btn bg-transparent" data-toggle="collapse" data-target="#descriptions"><i class="fa fa-chevron-down fa-2x"
                                                                                       aria-hidden="true">
             </i></button>
         </div>
-        <div class="row descriptionsRow">
+        <div class="row no-margin descriptionsRow">
             <div class="col-sm-4">
 
-                <div class="col-sm-12">
+
                     <div>
                         <h2>
                             REALIDAD AUMENTADA
@@ -101,12 +99,12 @@
                         <img class="img-fluid" src="img/welcome/lightbulb.png">
                     </div>
 
-                </div>
+
             </div>
             <div class="col-sm-4">
 
-                <div class="col-sm-12">
-                    <div class="borders">
+
+
                         <h2>
                             REALIDAD VIRTUAL
                         </h2>
@@ -116,16 +114,15 @@
                             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                             voluptate velit esse
                         </p>
-                    </div>
+
                     <div class="img-container">
                         <img class="img-fluid" src="img/welcome/lightbulb.png">
                     </div>
 
-                </div>
             </div>
             <div class="col-sm-4">
 
-                <div class="col-sm-12">
+
                     <div>
                         <h2>
                             REALIDAD MIXTA
@@ -141,7 +138,7 @@
                         <img class="img-fluid" src="img/welcome/lightbulb.png">
                     </div>
 
-                </div>
+
             </div>
         </div>
     </div>
@@ -151,9 +148,9 @@
 
 
 <div id="sectors">
-    <div class="row align-items-center">
+    <div class="row no-margin">
 
-        <div class="col-sm-4 offset-sm-5">
+        <div class="col-sm-4 offset-sm-5 vertical-align">
             <div class="sectorsTitle">
                 <p class="titleNeo">CREAMOS LO<BR></p>
                 <p class="titleGrotesk">INIMAGINABLE<BR></p>
@@ -166,7 +163,7 @@
 
 <div id="sectorsExamples">
 
-        <div class="row no-gutters">
+        <div class="row no-margin">
                 <div class="col-sm-6">
                     <p class="examplesTitleA">
                         MERCADOTECNIA
@@ -174,7 +171,7 @@
                     <p class="examplesTitleB">
                         PUBLICIDAD
                     </p>
-                    <div class="col-sm-12">
+
                         <p class="examplesText">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -185,19 +182,18 @@
                             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                             voluptate velit esse
                         </p>
-                    </div>
+
                 </div>
                 <div class="col-sm-6">
                     <img src="img/sectors/marketing.png" class="img-fluid">
                 </div>
         </div>
-        <div class="row no-gutters">
+        <div class="row no-margin">
             <div class="col-sm-6">
 
-                <div class="col-sm-12">
+
                     <img src="img/sectors/construction.png" class="img-fluid">
 
-                </div>
             </div>
             <div class="col-sm-6">
                 <p class="examplesTitleA">
@@ -218,7 +214,7 @@
                 </p>
             </div>
         </div>
-    <div class="row no-gutters">
+    <div class="row no-margin">
         <div class="col-sm-6">
             <p class="examplesTitleA">
                 MERCADOTECNIA
@@ -226,7 +222,7 @@
             <p class="examplesTitleB">
                 PUBLICIDAD
             </p>
-            <div class="col-sm-12">
+
                 <p class="examplesText">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -237,19 +233,19 @@
                     laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                     voluptate velit esse
                 </p>
-            </div>
+
         </div>
         <div class="col-sm-6">
             <img src="img/sectors/tourism.png" class="img-fluid">
         </div>
     </div>
-    <div class="row no-gutters">
+    <div class="row no-margin">
         <div class="col-sm-6">
 
-            <div class="col-sm-12">
+
                 <img src="img/sectors/realEstate.png" class="img-fluid">
 
-            </div>
+
         </div>
         <div class="col-sm-6">
             <p class="examplesTitleA">
@@ -270,7 +266,7 @@
             </p>
         </div>
     </div>
-    <div class="row no-gutters">
+    <div class="row no-margin">
         <div class="col-sm-6">
             <p class="examplesTitleA">
                 MERCADOTECNIA
@@ -278,7 +274,7 @@
             <p class="examplesTitleB">
                 PUBLICIDAD
             </p>
-            <div class="col-sm-12">
+
                 <p class="examplesText">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -289,7 +285,7 @@
                     laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                     voluptate velit esse
                 </p>
-            </div>
+
         </div>
         <div class="col-sm-6">
             <img src="img/sectors/entertainment.png" class="img-fluid">
@@ -307,26 +303,26 @@
             </div>
             <div class="col-sm-4">
                 <div class="row">
-                    <div class="col-sm-12">
+
                         <img src="img/proyects/proyects2A.png" class="img-fluid">
-                    </div>
+
                 </div>
                 <div class="row">
-                    <div class="col-sm-12">
+
                         <img src="img/proyects/proyects2B.png" class="img-fluid">
-                    </div>
+
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="row">
-                    <div class="col-sm-12">
+
                         <img src="img/proyects/proyects3A.png" class="img-fluid">
-                    </div>
+
                 </div>
                 <div class="row">
-                    <div class="col-sm-12">
+
                         <img src="img/proyects/proyects3B.png" class="img-fluid">
-                    </div>
+
                 </div>
             </div>
         </div>
