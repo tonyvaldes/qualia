@@ -18,6 +18,9 @@
 
 }
 
+.spacing{
+    padding: 100px 10px;
+}
 /*
 ************************************************
 ******************FONTS*************************
@@ -265,8 +268,6 @@ nav .fa{
 
     height: calc(100vh);
 
-
-
     width: 100%;
 }
 
@@ -335,31 +336,166 @@ nav .fa{
     width:100%;
 }
 
-#sectorsExamples .col-sm-6{
-    height:50%;
-}
+
 
 #sectorsExamples>.row:nth-of-type(1)>.col-sm-6:nth-of-type(2),
 #sectorsExamples>.row:nth-of-type(2)>.col-sm-6:nth-of-type(1),
 #sectorsExamples>.row:nth-of-type(3)>.col-sm-6:nth-of-type(2),
 #sectorsExamples>.row:nth-of-type(4)>.col-sm-6:nth-of-type(1),
-#sectorsExamples>.row:nth-of-type(5)>.col-sm-6:nth-of-type(2){
+#sectorsExamples>.row:nth-of-type(5)>.col-sm-6:nth-of-type(2),
+#sectorsExamples>.row:nth-of-type(6)>.col-sm-6:nth-of-type(1),
+#sectorsExamples>.row:nth-of-type(7)>.col-sm-6:nth-of-type(2) {
     padding: 0;
 }
 
 /*
 ************************************************
-******************PROYECTS*************************
+******************PROjECTS*************************
 **************************************************
 */
 
-#proyects {
+#projects {
+
     background-color: white;
 }
 
-#proyects .img-fluid{
-    width:90%;
+#projects .img-fluid{
+    min-height: 100%;
+
+    min-width: 100%;
+
+
 }
+
+#projects>.conatiner>.row:nth-of-type(1)>.col-sm-4:nth-of-type(1)>.img-container:nth-of-type(1){
+    height:700px;
+
+    overflow: hidden;
+}
+
+
+#projects>.conatiner>.row:nth-of-type(1)>.col-sm-4:nth-of-type(2)>.img-container:nth-of-type(1){
+    height:230px;
+
+    overflow: hidden;
+
+
+}
+
+#projects>.conatiner>.row:nth-of-type(1)>.col-sm-4:nth-of-type(2)>.img-container:nth-of-type(2)>.img-fluid:nth-of-type(1){
+
+    padding-top: 3%;
+
+}
+
+#projects>.conatiner>.row:nth-of-type(1)>.col-sm-4:nth-of-type(2)>.img-container:nth-of-type(2){
+    height:470px;
+
+    overflow: hidden;
+}
+
+#projects>.conatiner>.row:nth-of-type(1)>.col-sm-4:nth-of-type(3)>.img-container:nth-of-type(1){
+    height:350px;
+
+    overflow: hidden;
+
+    padding-bottom: 2%;
+}
+
+#projects>.conatiner>.row:nth-of-type(1)>.col-sm-4:nth-of-type(3)>.img-container:nth-of-type(2)>.img-fluid:nth-of-type(1){
+
+    padding-top: 3%;
+
+}
+
+#projects>.conatiner>.row:nth-of-type(1)>.col-sm-4:nth-of-type(3)>.img-container:nth-of-type(2){
+    height:350px;
+
+    overflow: hidden;
+}
+/*
+************************************************
+******************TEAM*************************
+**************************************************
+*/
+
+#team{
+    background-color: white;
+}
+
+#team .img-container{
+
+
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 100%;
+
+
+
+}
+
+
+
+#team .img-container img{
+    width: 100%;
+    position: absolute;
+
+    top:0;
+    left:0;
+}
+
+
+
+/*
+************************************************
+******************  BLOG    *************************
+**************************************************
+*/
+
+#blog{
+    background-color: white;
+}
+
+#blog .img-container{
+    height:400px;
+
+    overflow: hidden;
+
+    position:relative;
+
+}
+
+#blog img{
+    min-width: 100%;
+
+    min-height: 100%;
+}
+
+
+#blog .entryDestription{
+    background-color: #ffffff;
+}
+
+.blogSlide  h1:after{
+    content:'';
+
+    width:120px;
+
+    height:4px;
+
+    background:#000000;
+
+    position:absolute;
+
+    bottom:-4px;
+
+    right:0;
+
+}
+
 
 /*
 ************************************************
