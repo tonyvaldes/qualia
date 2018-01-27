@@ -459,6 +459,25 @@ nav .fa{
     background-color: white;
 }
 
+#blog :before{
+    content:'';
+
+
+    background-color:#006666 ;
+
+    -ms-transform: skewX(20deg); /* IE 9 */
+    -webkit-transform: skewX(20deg); /* Safari */
+    transform: skewX(20deg);
+
+    overflow: hidden;
+
+    height:5000px;
+
+    width:5000px;
+
+    z-index: -5;
+}
+
 #blog .img-container{
     height:400px;
 
@@ -477,23 +496,6 @@ nav .fa{
 
 #blog .entryDestription{
     background-color: #ffffff;
-}
-
-.blogSlide  h1:after{
-    content:'';
-
-    width:120px;
-
-    height:4px;
-
-    background:#000000;
-
-    position:absolute;
-
-    bottom:-4px;
-
-    right:0;
-
 }
 
 
