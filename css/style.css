@@ -21,6 +21,8 @@
 .spacing{
     padding: 100px 10px;
 }
+
+
 /*
 ************************************************
 ******************FONTS*************************
@@ -40,6 +42,14 @@
     font-family: 'neoteric-bold';
 
     src:url(fonts/neoteric-bold.ttf);
+
+}
+
+@font-face {
+
+    font-family: 'neoteric';
+
+    src:url(fonts/neoteric.ttf);
 
 }
 
@@ -83,30 +93,30 @@ nav .fa{
 }
 
 #menu   {
-    position:absolute;
 
-    position:fixed;
-    left:91%;
-
-    top:6%;
+    position: relative;
 
     z-index: 10;
 }
 
 #menu ul{
-
     list-style-type: none;
 
+    position: fixed;
 
+    top: 63px;
 
+    right: 0;
+
+    background: rgba(0,0,0,.4);
 }
 
 
-#menu li{
+#menu a{
 
     font-family: 'grotesk', sans-serif;
 
-    color:black;
+    color:#ffffff;
 
     font-size: 20px;
 
@@ -332,6 +342,46 @@ nav .fa{
 
 }
 
+#sectorsExamples .titleNeo{
+
+    font-family: 'neoteric-bold', sans-serif;
+
+    font-weight: bold;
+
+    font-size: 35px;
+
+    color:black;
+
+    text-align: right;
+
+    padding-top: 5%;
+
+
+}
+
+#sectorsExamples .titleGrotesk{
+    font-family: 'grotesk', sans-serif;
+
+    font-size:  35px;
+
+    color:black;
+
+    text-align: center;
+
+    padding-top: 5%;
+
+}
+
+ .examplesText {
+
+    font-family: "Myriad Pro", sans-serif;
+
+    font-size: 18px;
+
+    padding-top: 5%;
+
+}
+
 #sectorsExamples .img-fluid{
     width:100%;
 }
@@ -359,42 +409,147 @@ nav .fa{
     background-color: white;
 }
 
+#projects .container{
+    max-width:90%;
+}
+
+ .titleNeo{
+    font-family: 'neoteric-bold', sans-serif;
+
+    font-weight: bold;
+
+    font-size: 35px;
+
+    color:black;
+
+    padding-top: 5%;
+
+    position:relative;
+
+    padding-left:2%;
+
+}
+
+#projects h1:before{
+    content:'';
+
+    position:absolute;
+
+    width:250px;
+
+    height:5px;
+
+    background-color: #006666;
+
+    bottom: 0;
+
+}
+
+ .titleGrotesk{
+    font-family: 'grotesk', sans-serif;
+
+    font-size:  35px;
+
+    color:black;
+
+    text-align: center;
+
+    padding-top: 5%;
+
+}
+
+
+
+ #projects h2{
+     color:#ffffff;
+ }
+
+ #projects h2 span.titleGrotesk {
+     color:#ffffff;
+ }
+
+ #projects .examplesText {
+     color:white;
+ }
 #projects .img-fluid{
     min-height: 100%;
 
     min-width: 100%;
 
-
 }
 
-#projects>.conatiner>.row:nth-of-type(1)>.col-sm-4:nth-of-type(1)>.img-container:nth-of-type(1){
+#projects .imageText{
+    position: absolute;
+
+    bottom:0;
+
+    left:30px;
+
+    opacity:0;
+
+    transition: opacity .7s ease-out;
+
+    -moz-transition: opacity .7s ease-out;
+
+    -webkit-transition: opacity .7s ease-out;
+
+    -o-transition: opacity .7s ease-out;
+}
+
+
+#projects>.container>.row:nth-of-type(1)>.col-sm-4:nth-of-type(1)>.img-container:nth-of-type(1){
     height:700px;
 
     overflow: hidden;
 }
 
+#projects>.container>.row:nth-of-type(1)>.col-sm-4:nth-of-type(1)>.img-container:nth-of-type(1):hover>.imageText{
+  opacity:1;
+}
 
-#projects>.conatiner>.row:nth-of-type(1)>.col-sm-4:nth-of-type(2)>.img-container:nth-of-type(1){
+
+#projects>.container>.row:nth-of-type(1)>.col-sm-4:nth-of-type(2)>.img-container:nth-of-type(1){
     height:230px;
 
     overflow: hidden;
-
-
 }
 
-#projects>.conatiner>.row:nth-of-type(1)>.col-sm-4:nth-of-type(2)>.img-container:nth-of-type(2)>.img-fluid:nth-of-type(1){
+#projects>.container>.row:nth-of-type(1)>.col-sm-4:nth-of-type(2)>.img-container:nth-of-type(1):hover>.imageText{
+    opacity:1;
+}
+
+
+#projects>.container>.row:nth-of-type(1)>.col-sm-4:nth-of-type(2)>.img-container:nth-of-type(2)>.img-fluid:nth-of-type(1){
 
     padding-top: 3%;
+}
+
+#projects>.container>.row:nth-of-type(1)>.col-sm-4:nth-of-type(2)>.img-container:nth-of-type(2):hover>.imageText{
+    opacity:1;
+}
+
+
+#projects>.container>.row:nth-of-type(1)>.col-sm-4:nth-of-type(2)>.img-container:nth-of-type(1)>.imageText:nth-of-type(1){
+
+   top:14%;
 
 }
 
-#projects>.conatiner>.row:nth-of-type(1)>.col-sm-4:nth-of-type(2)>.img-container:nth-of-type(2){
+#projects>.container>.row:nth-of-type(1)>.col-sm-4:nth-of-type(3)>.img-container:nth-of-type(1)>.imageText:nth-of-type(1){
+
+    top:30%;
+
+}
+
+
+
+#projects>.container>.row:nth-of-type(1)>.col-sm-4:nth-of-type(2)>.img-container:nth-of-type(2){
     height:470px;
 
     overflow: hidden;
 }
 
-#projects>.conatiner>.row:nth-of-type(1)>.col-sm-4:nth-of-type(3)>.img-container:nth-of-type(1){
+#projects>.container>.row:nth-of-type(1)>.col-sm-4:nth-of-type(3)>.img-container:nth-of-type(1){
     height:350px;
 
     overflow: hidden;
@@ -402,16 +557,24 @@ nav .fa{
     padding-bottom: 2%;
 }
 
-#projects>.conatiner>.row:nth-of-type(1)>.col-sm-4:nth-of-type(3)>.img-container:nth-of-type(2)>.img-fluid:nth-of-type(1){
+#projects>.container>.row:nth-of-type(1)>.col-sm-4:nth-of-type(3)>.img-container:nth-of-type(1):hover>.imageText{
+    opacity:1;
+}
+
+#projects>.container>.row:nth-of-type(1)>.col-sm-4:nth-of-type(3)>.img-container:nth-of-type(2)>.img-fluid:nth-of-type(1){
 
     padding-top: 3%;
 
 }
 
-#projects>.conatiner>.row:nth-of-type(1)>.col-sm-4:nth-of-type(3)>.img-container:nth-of-type(2){
+#projects>.container>.row:nth-of-type(1)>.col-sm-4:nth-of-type(3)>.img-container:nth-of-type(2){
     height:350px;
 
     overflow: hidden;
+}
+
+#projects>.container>.row:nth-of-type(1)>.col-sm-4:nth-of-type(3)>.img-container:nth-of-type(2):hover>.imageText{
+    opacity:1;
 }
 /*
 ************************************************
@@ -421,6 +584,21 @@ nav .fa{
 
 #team{
     background-color: white;
+}
+
+#team .titleNeo:first-child:before{
+    content:'';
+
+    position:absolute;
+
+    width:150px;
+
+    height:5px;
+
+    background-color: #006666;
+
+    bottom: 0;
+
 }
 
 #team .img-container{
@@ -457,29 +635,92 @@ nav .fa{
 
 #blog{
     background-color: white;
+
+    position:relative;
 }
 
-#blog :before{
-    content:'';
+#blog:before{
+    content: '';
 
+    position: absolute;
 
-    background-color:#006666 ;
+    background-color: #006666;
 
-    -ms-transform: skewX(20deg); /* IE 9 */
-    -webkit-transform: skewX(20deg); /* Safari */
-    transform: skewX(20deg);
+    -ms-transform: skewX(75deg);
+
+    transform: skewX(75deg);
+
+    -webkit-transform: skewX(75deg);
 
     overflow: hidden;
 
-    height:5000px;
+    height: 85%;
 
-    width:5000px;
+    width: 5000px;
 
-    z-index: -5;
+    z-index: 0;
+}
+
+#blog h1{
+    margin-top:10%;
+
+    color:white;
+}
+
+#blog .col-sm-5 p{
+    color:white;
+}
+
+#blog h1 span{
+    color:white;
+}
+
+#blog button{
+    display: block; margin: 0 auto;
+
+    color:white;
+
+    border-color:white;
+}
+
+#blog h2{
+    position:relative;
+
+    padding-bottom: 5%;
+}
+
+#blog h2:before{
+    content: '';
+
+    position: absolute;
+
+    width: 150px;
+
+    height: 5px;
+
+    background-color: #000;
+
+    bottom: 0;
+}
+
+.slick-slide {
+
+    margin: 0 10px;
+
+
+
+}
+
+.slick-list {
+
+    margin-top: 10%;
+
 }
 
 #blog .img-container{
     height:400px;
+
+    width:100%;
 
     overflow: hidden;
 
@@ -496,8 +737,228 @@ nav .fa{
 
 #blog .entryDestription{
     background-color: #ffffff;
+
+    padding-bottom: 8%;
 }
 
+
+
+
+/*
+************************************************
+******************  CONTACT    *************************
+**************************************************
+*/
+
+#contact{
+    background: url('../img/contact/contact_bg.jpg') no-repeat center center;
+
+    background-size: cover;
+
+    height: calc(100vh);
+
+    width: 100%;
+}
+
+#contact .titleNeo{
+
+    font-family: 'neoteric-bold', sans-serif;
+
+    font-weight: bold;
+
+    font-size: 35px;
+
+    color:white;
+
+    text-align: center;
+
+    padding-top:0;
+
+
+}
+
+
+#contact .titleGrotesk{
+    font-family: 'grotesk', sans-serif;
+
+    font-size:  35px;
+
+    color:white;
+
+    text-align: center;
+
+    padding-top:2%;
+
+}
+
+#contact .form-group{
+    padding-top:3%;
+}
+
+
+
+#contact p{
+    font-family: 'neoteric', sans-serif;
+
+    color: white;
+
+    padding-left:19%;
+}
+
+#contact input{
+    display:inline;
+
+    width:50%;
+
+    background: transparent;
+
+    border:none;
+
+    border-bottom: solid white 4px;
+
+    color:white;
+
+    padding:0;
+}
+
+
+#contact label{
+
+    font-family: 'neoteric', sans-serif;
+
+    color:white;
+
+    display:inline;
+
+    width:20%;
+
+}
+
+#contact .message{
+    padding-left: 19%;
+
+}
+
+#contact .message input{
+
+
+    display:block;
+
+    width:75%;
+}
+
+
+#contact button{
+    font-family: 'neoteric', sans-serif;
+
+    color:white;
+
+    border:solid white 2px;
+
+    border-radius: 5px;
+
+    display: block; margin: 0 auto;
+
+    margin-top: 5%;
+
+    width:200px;
+}
+
+
+
+/*
+************************************************
+******************  FOOTER    *************************
+**************************************************
+*/
+
+#footer{
+    background-color:#333333 ;
+
+    height:30%;
+}
+
+/*
+#footer .img-container{
+    height:200px;
+
+    width:100%;
+
+    overflow: hidden;
+
+    position:relative;
+}*/
+
+
+#footer .img-fluid {
+    margin-left:20%;
+
+    height:30%;
+}
+
+
+
+#footer h1{
+    color: #ffffff;
+}
+
+#footer span{
+    color:#ffffff;
+}
+
+#footer .footerText{
+    color:#ffffff;
+}
+
+#footer>.container>.row:nth-of-type(1)>.col-sm-4:nth-of-type(2){
+   position:relative;
+    /* border-left:5px solid white;
+
+    border-right:5px solid white;*/
+
+}
+
+#footer>.container>.row:nth-of-type(1)>.col-sm-4:nth-of-type(2):before{
+    content: '';
+
+    position: absolute;
+
+    width: 5px;
+
+    height: 300px;
+
+    top:0;
+
+    left:5px;
+
+    background: #ffffff;
+
+}
+#footer>.container>.row:nth-of-type(1)>.col-sm-4:nth-of-type(2):after{
+    content: '';
+
+    position: absolute;
+
+    width: 5px;
+
+    height: 300px;
+
+    top:0;
+
+    left:100%;
+
+    background: #ffffff;
+
+
+}
+
+#footer>.container>.row:nth-of-type(1)>.col-sm-4:nth-of-type(2)>img,
+#footer>.container>.row:nth-of-type(1)>.col-sm-4:nth-of-type(3)>img
+{
+    margin-bottom: 19%;
+
+
+}
 
 /*
 ************************************************
@@ -511,11 +972,112 @@ nav .fa{
 
     }
 
+    #sectors .titleNeo{
+        font-size: 30px;
+    }
+
+    #sectors .titleGrotesk{
+        font-size:30px;
+    }
+
+    #projects h2{
+        font-size:20px;
+    }
+
+    #projects h2 span.titleGrotesk {
+        font-size:20px;
+    }
+
+    #projects .examplesText {
+        font-size:15px;
+    }
+
+    #projects>.container>.row:nth-of-type(1)>.col-sm-4:nth-of-type(1)>.img-container:nth-of-type(1){
+        height:500px;
+
+    }
+
+
+    #projects>.container>.row:nth-of-type(1)>.col-sm-4:nth-of-type(2)>.img-container:nth-of-type(1){
+        height:200px;
+
+
+
+    }
+
+
+
+    #projects>.container>.row:nth-of-type(1)>.col-sm-4:nth-of-type(2)>.img-container:nth-of-type(2){
+        height:300px;
+
+
+    }
+
+    #projects>.container>.row:nth-of-type(1)>.col-sm-4:nth-of-type(3)>.img-container:nth-of-type(1){
+        height:250px;
+    }
+
+
+
+    #projects>.container>.row:nth-of-type(1)>.col-sm-4:nth-of-type(3)>.img-container:nth-of-type(2){
+        height:250px;
+
+    }
+
+    #footer .img-fluid{
+        margin-left: 25%;
+        height: 20%;
+    }
+
 }
 
 
+@media (max-width: 992px){
+
+    #sectors .col-sm-4{
+        margin-top: 37%;
+    }
+
+    #sectorsExamples .titleGrotesk{
+        font-size: 30px;
+    }
+
+    #sectorsExamples .titleNeo{
+        font-size: 30px;
+    }
+
+    .examplesText{
+        font-size: 18px;
+    }
+
+    #blog:before{
+        transform: skewX(37deg);
+        -ms-transform: skewX(37deg);
+        -webkit-transform: skewX(37deg);
+        width: 70%;
+    }
+
+    #blog .examplesText{
+        font-size: 21px;
+    }
+
+    #blog h2.titleNeo{
+
+        font-size: 27px;
+
+    }
+
+    #blog h2 span.titleGrotesk{
+
+        font-size: 24px;
+
+    }
+
+
+}
+
 @media screen and (max-device-width: 800px) {
-    html {
+    #welcome {
         background: url(../img/welcome/vrBg.png) #000 no-repeat center center fixed;
     }
     #bgvid {
@@ -523,5 +1085,121 @@ nav .fa{
     }
 }
 
+@media (max-width: 768px){
+
+
+    #sectors .col-sm-4{
+        margin:50%;
+    }
+
+    #sectorsExamples .examplesText{
+        font-size: 16px;
+    }
+
+    #sectorsExamples .titleGrotesk{
+        font-size: 21px;
+
+    }
+
+    #sectorsExamples .titleNeo{
+        font-size:23px ;
+    }
+
+    #blog:before{
+        transform: skewX(30deg);
+        -ms-transform: skewX(30deg);
+        -webkit-transform: skewX(30deg);
+        width: 70%;
+    }
+
+    #footer .titleNeo{
+        font-size: 28px;
+    }
+
+    #footer .titleGrotesk{
+        font-size:28px ;
+    }
+
+    #footer>.container>.row:nth-of-type(1)>.col-sm-4:nth-of-type(2)>img,
+    #footer>.container>.row:nth-of-type(1)>.col-sm-4:nth-of-type(3)>img{
+        margin-bottom: 26%;
+    }
+    #footer>.container>.row:nth-of-type(1)>.col-sm-4:nth-of-type(2)>img{
+        margin-left: 12%;
+    }
+
+    #footer>.container>.row:nth-of-type(1)>.col-sm-4:nth-of-type(3)>img{
+        margin-left: 33%;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    #welcome .img-fluid {
+        width: 19%;
+
+        margin-left: 40.5%;
+    }
+
+    #welcome h2{
+        margin: 29px 0 5% 0;
+    }
+
+    #sectors .titleNeo {
+        font-size: 24px;
+    }
+
+    #sectors .titleGrotesk {
+        font-size: 19px;
+    }
+
+    #projects .titleNeo {
+        font-size: 30px;
+
+    }
+
+    #projects .titleGrotesk {
+        font-size: 29px;
+    }
+
+    #blog:before {
+        transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+        width: 98%;
+
+    }
+
+    #contact p {
+        padding-left: 4%;
+    }
+
+    #contact .message {
+        padding-left: 4%;
+    }
+
+    #footer > .container > .row:nth-of-type(1) > .col-sm-4:nth-of-type(2):before,
+    #footer > .container > .row:nth-of-type(1) > .col-sm-4:nth-of-type(2):after {
+
+        display: none;
+
+    }
+
+    #footer>.container>.row:nth-of-type(1)>.col-sm-4:nth-of-type(1)>img{
+        margin-left: 38%;
+    }
+
+    #footer>.container>.row:nth-of-type(1)>.col-sm-4:nth-of-type(2)>img{
+        margin-left: 35%;
+    }
+
+    #footer>.container>.row:nth-of-type(1)>.col-sm-4:nth-of-type(3)>img{
+        margin-left: 41%;
+
+    }
+
+
+}
 
 
